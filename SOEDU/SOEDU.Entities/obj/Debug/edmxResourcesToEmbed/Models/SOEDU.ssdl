@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sys_Assess">
+    <Key>
+      <PropertyRef Name="Assess_ID" />
+    </Key>
+    <Property Name="Assess_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Course_ID" Type="varchar" MaxLength="50" />
+    <Property Name="IsStar" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="Sys_Attach">
+    <Key>
+      <PropertyRef Name="Attach_ID" />
+    </Key>
+    <Property Name="Attach_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lesson_ID" Type="varchar" MaxLength="50" />
+    <Property Name="File_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Des" Type="nvarchar" MaxLength="250" />
+    <Property Name="FileSource" Type="image" />
+    <Property Name="FileSize" Type="varchar" MaxLength="20" />
+    <Property Name="IsOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="Sys_Course">
+    <Key>
+      <PropertyRef Name="Course_ID" />
+    </Key>
+    <Property Name="Course_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Category_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Course_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Avatar" Type="nvarchar" MaxLength="500" />
+    <Property Name="Video" Type="nvarchar" MaxLength="500" />
+    <Property Name="VideoImg" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsYoutube" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="ntext" />
+    <Property Name="IsValue" Type="bit" Nullable="false" />
+    <Property Name="IsPrice" Type="float" />
+    <Property Name="IsPriceSale" Type="float" />
+    <Property Name="ViewCount" Type="int" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="IsOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="Sys_CourseCategory">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Category_Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Title_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsIcon" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsOrder" Type="int" />
+    <Property Name="Parent_ID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_Lesson">
+    <Key>
+      <PropertyRef Name="Lesson_ID" />
+    </Key>
+    <Property Name="Lesson_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Section_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Lesson_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Title" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Video" Type="nvarchar" MaxLength="500" />
+    <Property Name="VideoImg" Type="nvarchar" MaxLength="500" />
+    <Property Name="ParentID" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="IsOrder" Type="int" />
+    <Property Name="IsStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sys_Section">
+    <Key>
+      <PropertyRef Name="Section_ID" />
+    </Key>
+    <Property Name="Section_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Course_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Section_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Title" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="IsOrder" Type="int" />
+    <Property Name="IsStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sys_StudentCourse">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Course_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Course_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsStatus" Type="bit" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="Sys_StudentTest">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Test_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Test_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDate" Type="datetime" />
+    <Property Name="IsGetTime" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_StudentTestSection">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="TestSection_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TestSection_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDate" Type="smalldatetime" />
+    <Property Name="IsGetTime" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_Target">
+    <Key>
+      <PropertyRef Name="Target_ID" />
+    </Key>
+    <Property Name="Target_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Course_ID" Type="varchar" MaxLength="50" />
+    <Property Name="User_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Parent_ID" Type="varchar" MaxLength="50" />
+    <Property Name="IsStar" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="IsOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="Sys_TeacherCourse">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Course_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Course_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsSupper" Type="bit" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="IsStatus" Type="bit" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="Sys_Test">
+    <Key>
+      <PropertyRef Name="Test_ID" />
+    </Key>
+    <Property Name="Test_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lesson_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Test_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsSetTime" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_TestLesson">
+    <Key>
+      <PropertyRef Name="Test_ID" />
+    </Key>
+    <Property Name="Test_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lesson_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Test_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsSetTime" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_TestLessonAnswer">
+    <Key>
+      <PropertyRef Name="Answer_ID" />
+    </Key>
+    <Property Name="Answer_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Test_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Answer_Name" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Sys_TestLessonQuestion">
+    <Key>
+      <PropertyRef Name="Question_ID" />
+    </Key>
+    <Property Name="Question_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Answer_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Question_Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsSupper" Type="bit" />
+    <Property Name="IsOK" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sys_TestSection">
+    <Key>
+      <PropertyRef Name="TestSection_ID" />
+    </Key>
+    <Property Name="TestSection_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Section_ID" Type="varchar" MaxLength="50" />
+    <Property Name="IsSetTime" Type="varchar" MaxLength="50" />
+    <Property Name="Test_Name" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Sys_TestSectionAnswer">
+    <Key>
+      <PropertyRef Name="Answer_ID" />
+    </Key>
+    <Property Name="Answer_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TestSection_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Answer_Name" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Sys_TestSectionQuestion">
+    <Key>
+      <PropertyRef Name="Question_ID" />
+    </Key>
+    <Property Name="Question_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Answer_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Question_Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsSupper" Type="bit" />
+    <Property Name="IsOK" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sys_Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsSex" Type="bit" />
+    <Property Name="IsAdds" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsMobile" Type="varchar" MaxLength="50" />
+    <Property Name="IsDes" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsFoto" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsLocked" Type="bit" />
+    <Property Name="IsLevel" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+  </EntityType>
+  <Association Name="FK_Sys_Assess_Sys_Course">
+    <End Role="Sys_Course" Type="Self.Sys_Course" Multiplicity="0..1" />
+    <End Role="Sys_Assess" Type="Self.Sys_Assess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Course">
+        <PropertyRef Name="Course_ID" />
+      </Principal>
+      <Dependent Role="Sys_Assess">
+        <PropertyRef Name="Course_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Attach_Sys_Lesson">
+    <End Role="Sys_Lesson" Type="Self.Sys_Lesson" Multiplicity="0..1" />
+    <End Role="Sys_Attach" Type="Self.Sys_Attach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Lesson">
+        <PropertyRef Name="Lesson_ID" />
+      </Principal>
+      <Dependent Role="Sys_Attach">
+        <PropertyRef Name="Lesson_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Course_Sys_CourseCategory">
+    <End Role="Sys_CourseCategory" Type="Self.Sys_CourseCategory" Multiplicity="0..1" />
+    <End Role="Sys_Course" Type="Self.Sys_Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_CourseCategory">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Sys_Course">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_CourseCategory_Sys_CourseCategory">
+    <End Role="Sys_CourseCategory" Type="Self.Sys_CourseCategory" Multiplicity="0..1" />
+    <End Role="Sys_CourseCategory1" Type="Self.Sys_CourseCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_CourseCategory">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Sys_CourseCategory1">
+        <PropertyRef Name="Parent_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Lesson_Sys_Lesson1">
+    <End Role="Sys_Lesson" Type="Self.Sys_Lesson" Multiplicity="0..1" />
+    <End Role="Sys_Lesson1" Type="Self.Sys_Lesson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Lesson">
+        <PropertyRef Name="Lesson_ID" />
+      </Principal>
+      <Dependent Role="Sys_Lesson1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Lesson_Sys_Section">
+    <End Role="Sys_Section" Type="Self.Sys_Section" Multiplicity="0..1" />
+    <End Role="Sys_Lesson" Type="Self.Sys_Lesson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Section">
+        <PropertyRef Name="Section_ID" />
+      </Principal>
+      <Dependent Role="Sys_Lesson">
+        <PropertyRef Name="Section_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Section_Sys_Course">
+    <End Role="Sys_Course" Type="Self.Sys_Course" Multiplicity="0..1" />
+    <End Role="Sys_Section" Type="Self.Sys_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Course">
+        <PropertyRef Name="Course_ID" />
+      </Principal>
+      <Dependent Role="Sys_Section">
+        <PropertyRef Name="Course_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentCourse_Sys_Course">
+    <End Role="Sys_Course" Type="Self.Sys_Course" Multiplicity="1" />
+    <End Role="Sys_StudentCourse" Type="Self.Sys_StudentCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Course">
+        <PropertyRef Name="Course_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentCourse">
+        <PropertyRef Name="Course_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentCourse_Sys_Users">
+    <End Role="Sys_Users" Type="Self.Sys_Users" Multiplicity="1" />
+    <End Role="Sys_StudentCourse" Type="Self.Sys_StudentCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentCourse">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentTest_Sys_Test">
+    <End Role="Sys_Test" Type="Self.Sys_Test" Multiplicity="1" />
+    <End Role="Sys_StudentTest" Type="Self.Sys_StudentTest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Test">
+        <PropertyRef Name="Test_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentTest">
+        <PropertyRef Name="Test_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentTest_Sys_Users">
+    <End Role="Sys_Users" Type="Self.Sys_Users" Multiplicity="1" />
+    <End Role="Sys_StudentTest" Type="Self.Sys_StudentTest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentTest">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentTest_TestLesson">
+    <End Role="Sys_TestLesson" Type="Self.Sys_TestLesson" Multiplicity="1" />
+    <End Role="Sys_StudentTest" Type="Self.Sys_StudentTest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_TestLesson">
+        <PropertyRef Name="Test_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentTest">
+        <PropertyRef Name="Test_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentTestSection_Sys_TestSection">
+    <End Role="Sys_TestSection" Type="Self.Sys_TestSection" Multiplicity="1" />
+    <End Role="Sys_StudentTestSection" Type="Self.Sys_StudentTestSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_TestSection">
+        <PropertyRef Name="TestSection_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentTestSection">
+        <PropertyRef Name="TestSection_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_StudentTestSection_Sys_Users">
+    <End Role="Sys_Users" Type="Self.Sys_Users" Multiplicity="1" />
+    <End Role="Sys_StudentTestSection" Type="Self.Sys_StudentTestSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Sys_StudentTestSection">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Target_Sys_Course">
+    <End Role="Sys_Course" Type="Self.Sys_Course" Multiplicity="0..1" />
+    <End Role="Sys_Target" Type="Self.Sys_Target" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Course">
+        <PropertyRef Name="Course_ID" />
+      </Principal>
+      <Dependent Role="Sys_Target">
+        <PropertyRef Name="Course_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Target_Sys_Target">
+    <End Role="Sys_Target" Type="Self.Sys_Target" Multiplicity="0..1" />
+    <End Role="Sys_Target1" Type="Self.Sys_Target" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Target">
+        <PropertyRef Name="Target_ID" />
+      </Principal>
+      <Dependent Role="Sys_Target1">
+        <PropertyRef Name="Parent_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Target_Sys_Users">
+    <End Role="Sys_Users" Type="Self.Sys_Users" Multiplicity="0..1" />
+    <End Role="Sys_Target" Type="Self.Sys_Target" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Sys_Target">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TeacherCourse_Sys_Course">
+    <End Role="Sys_Course" Type="Self.Sys_Course" Multiplicity="1" />
+    <End Role="Sys_TeacherCourse" Type="Self.Sys_TeacherCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Course">
+        <PropertyRef Name="Course_ID" />
+      </Principal>
+      <Dependent Role="Sys_TeacherCourse">
+        <PropertyRef Name="Course_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TeacherCourse_Sys_Users">
+    <End Role="Sys_Users" Type="Self.Sys_Users" Multiplicity="1" />
+    <End Role="Sys_TeacherCourse" Type="Self.Sys_TeacherCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Sys_TeacherCourse">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Test_Sys_Lesson">
+    <End Role="Sys_Lesson" Type="Self.Sys_Lesson" Multiplicity="0..1" />
+    <End Role="Sys_Test" Type="Self.Sys_Test" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Lesson">
+        <PropertyRef Name="Lesson_ID" />
+      </Principal>
+      <Dependent Role="Sys_Test">
+        <PropertyRef Name="Lesson_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TestLessonAnswer_Sys_Test">
+    <End Role="Sys_Test" Type="Self.Sys_Test" Multiplicity="0..1" />
+    <End Role="Sys_TestLessonAnswer" Type="Self.Sys_TestLessonAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Test">
+        <PropertyRef Name="Test_ID" />
+      </Principal>
+      <Dependent Role="Sys_TestLessonAnswer">
+        <PropertyRef Name="Test_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TestLessonAnswer_TestLesson">
+    <End Role="Sys_TestLesson" Type="Self.Sys_TestLesson" Multiplicity="0..1" />
+    <End Role="Sys_TestLessonAnswer" Type="Self.Sys_TestLessonAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_TestLesson">
+        <PropertyRef Name="Test_ID" />
+      </Principal>
+      <Dependent Role="Sys_TestLessonAnswer">
+        <PropertyRef Name="Test_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TestLessonQuestion_Sys_TestLessonAnswer">
+    <End Role="Sys_TestLessonAnswer" Type="Self.Sys_TestLessonAnswer" Multiplicity="0..1" />
+    <End Role="Sys_TestLessonQuestion" Type="Self.Sys_TestLessonQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_TestLessonAnswer">
+        <PropertyRef Name="Answer_ID" />
+      </Principal>
+      <Dependent Role="Sys_TestLessonQuestion">
+        <PropertyRef Name="Answer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TestSection_Sys_Section">
+    <End Role="Sys_Section" Type="Self.Sys_Section" Multiplicity="0..1" />
+    <End Role="Sys_TestSection" Type="Self.Sys_TestSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Section">
+        <PropertyRef Name="Section_ID" />
+      </Principal>
+      <Dependent Role="Sys_TestSection">
+        <PropertyRef Name="Section_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TestSectionAnswer_Sys_TestSection">
+    <End Role="Sys_TestSection" Type="Self.Sys_TestSection" Multiplicity="0..1" />
+    <End Role="Sys_TestSectionAnswer" Type="Self.Sys_TestSectionAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_TestSection">
+        <PropertyRef Name="TestSection_ID" />
+      </Principal>
+      <Dependent Role="Sys_TestSectionAnswer">
+        <PropertyRef Name="TestSection_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_TestSectionQuestion_Sys_TestSectionAnswer">
+    <End Role="Sys_TestSectionAnswer" Type="Self.Sys_TestSectionAnswer" Multiplicity="0..1" />
+    <End Role="Sys_TestSectionQuestion" Type="Self.Sys_TestSectionQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_TestSectionAnswer">
+        <PropertyRef Name="Answer_ID" />
+      </Principal>
+      <Dependent Role="Sys_TestSectionQuestion">
+        <PropertyRef Name="Answer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Sys_Assess" EntityType="Self.Sys_Assess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Attach" EntityType="Self.Sys_Attach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Course" EntityType="Self.Sys_Course" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_CourseCategory" EntityType="Self.Sys_CourseCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Lesson" EntityType="Self.Sys_Lesson" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Section" EntityType="Self.Sys_Section" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_StudentCourse" EntityType="Self.Sys_StudentCourse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_StudentTest" EntityType="Self.Sys_StudentTest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_StudentTestSection" EntityType="Self.Sys_StudentTestSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Target" EntityType="Self.Sys_Target" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TeacherCourse" EntityType="Self.Sys_TeacherCourse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Test" EntityType="Self.Sys_Test" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TestLesson" EntityType="Self.Sys_TestLesson" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TestLessonAnswer" EntityType="Self.Sys_TestLessonAnswer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TestLessonQuestion" EntityType="Self.Sys_TestLessonQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TestSection" EntityType="Self.Sys_TestSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TestSectionAnswer" EntityType="Self.Sys_TestSectionAnswer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_TestSectionQuestion" EntityType="Self.Sys_TestSectionQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Users" EntityType="Self.Sys_Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Sys_Assess_Sys_Course" Association="Self.FK_Sys_Assess_Sys_Course">
+      <End Role="Sys_Course" EntitySet="Sys_Course" />
+      <End Role="Sys_Assess" EntitySet="Sys_Assess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Attach_Sys_Lesson" Association="Self.FK_Sys_Attach_Sys_Lesson">
+      <End Role="Sys_Lesson" EntitySet="Sys_Lesson" />
+      <End Role="Sys_Attach" EntitySet="Sys_Attach" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Course_Sys_CourseCategory" Association="Self.FK_Sys_Course_Sys_CourseCategory">
+      <End Role="Sys_CourseCategory" EntitySet="Sys_CourseCategory" />
+      <End Role="Sys_Course" EntitySet="Sys_Course" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_CourseCategory_Sys_CourseCategory" Association="Self.FK_Sys_CourseCategory_Sys_CourseCategory">
+      <End Role="Sys_CourseCategory" EntitySet="Sys_CourseCategory" />
+      <End Role="Sys_CourseCategory1" EntitySet="Sys_CourseCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Lesson_Sys_Lesson1" Association="Self.FK_Sys_Lesson_Sys_Lesson1">
+      <End Role="Sys_Lesson" EntitySet="Sys_Lesson" />
+      <End Role="Sys_Lesson1" EntitySet="Sys_Lesson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Lesson_Sys_Section" Association="Self.FK_Sys_Lesson_Sys_Section">
+      <End Role="Sys_Section" EntitySet="Sys_Section" />
+      <End Role="Sys_Lesson" EntitySet="Sys_Lesson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Section_Sys_Course" Association="Self.FK_Sys_Section_Sys_Course">
+      <End Role="Sys_Course" EntitySet="Sys_Course" />
+      <End Role="Sys_Section" EntitySet="Sys_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentCourse_Sys_Course" Association="Self.FK_Sys_StudentCourse_Sys_Course">
+      <End Role="Sys_Course" EntitySet="Sys_Course" />
+      <End Role="Sys_StudentCourse" EntitySet="Sys_StudentCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentCourse_Sys_Users" Association="Self.FK_Sys_StudentCourse_Sys_Users">
+      <End Role="Sys_Users" EntitySet="Sys_Users" />
+      <End Role="Sys_StudentCourse" EntitySet="Sys_StudentCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentTest_Sys_Test" Association="Self.FK_Sys_StudentTest_Sys_Test">
+      <End Role="Sys_Test" EntitySet="Sys_Test" />
+      <End Role="Sys_StudentTest" EntitySet="Sys_StudentTest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentTest_Sys_Users" Association="Self.FK_Sys_StudentTest_Sys_Users">
+      <End Role="Sys_Users" EntitySet="Sys_Users" />
+      <End Role="Sys_StudentTest" EntitySet="Sys_StudentTest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentTest_TestLesson" Association="Self.FK_Sys_StudentTest_TestLesson">
+      <End Role="Sys_TestLesson" EntitySet="Sys_TestLesson" />
+      <End Role="Sys_StudentTest" EntitySet="Sys_StudentTest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentTestSection_Sys_TestSection" Association="Self.FK_Sys_StudentTestSection_Sys_TestSection">
+      <End Role="Sys_TestSection" EntitySet="Sys_TestSection" />
+      <End Role="Sys_StudentTestSection" EntitySet="Sys_StudentTestSection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_StudentTestSection_Sys_Users" Association="Self.FK_Sys_StudentTestSection_Sys_Users">
+      <End Role="Sys_Users" EntitySet="Sys_Users" />
+      <End Role="Sys_StudentTestSection" EntitySet="Sys_StudentTestSection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Target_Sys_Course" Association="Self.FK_Sys_Target_Sys_Course">
+      <End Role="Sys_Course" EntitySet="Sys_Course" />
+      <End Role="Sys_Target" EntitySet="Sys_Target" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Target_Sys_Target" Association="Self.FK_Sys_Target_Sys_Target">
+      <End Role="Sys_Target" EntitySet="Sys_Target" />
+      <End Role="Sys_Target1" EntitySet="Sys_Target" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Target_Sys_Users" Association="Self.FK_Sys_Target_Sys_Users">
+      <End Role="Sys_Users" EntitySet="Sys_Users" />
+      <End Role="Sys_Target" EntitySet="Sys_Target" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TeacherCourse_Sys_Course" Association="Self.FK_Sys_TeacherCourse_Sys_Course">
+      <End Role="Sys_Course" EntitySet="Sys_Course" />
+      <End Role="Sys_TeacherCourse" EntitySet="Sys_TeacherCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TeacherCourse_Sys_Users" Association="Self.FK_Sys_TeacherCourse_Sys_Users">
+      <End Role="Sys_Users" EntitySet="Sys_Users" />
+      <End Role="Sys_TeacherCourse" EntitySet="Sys_TeacherCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Test_Sys_Lesson" Association="Self.FK_Sys_Test_Sys_Lesson">
+      <End Role="Sys_Lesson" EntitySet="Sys_Lesson" />
+      <End Role="Sys_Test" EntitySet="Sys_Test" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TestLessonAnswer_Sys_Test" Association="Self.FK_Sys_TestLessonAnswer_Sys_Test">
+      <End Role="Sys_Test" EntitySet="Sys_Test" />
+      <End Role="Sys_TestLessonAnswer" EntitySet="Sys_TestLessonAnswer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TestLessonAnswer_TestLesson" Association="Self.FK_Sys_TestLessonAnswer_TestLesson">
+      <End Role="Sys_TestLesson" EntitySet="Sys_TestLesson" />
+      <End Role="Sys_TestLessonAnswer" EntitySet="Sys_TestLessonAnswer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TestLessonQuestion_Sys_TestLessonAnswer" Association="Self.FK_Sys_TestLessonQuestion_Sys_TestLessonAnswer">
+      <End Role="Sys_TestLessonAnswer" EntitySet="Sys_TestLessonAnswer" />
+      <End Role="Sys_TestLessonQuestion" EntitySet="Sys_TestLessonQuestion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TestSection_Sys_Section" Association="Self.FK_Sys_TestSection_Sys_Section">
+      <End Role="Sys_Section" EntitySet="Sys_Section" />
+      <End Role="Sys_TestSection" EntitySet="Sys_TestSection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TestSectionAnswer_Sys_TestSection" Association="Self.FK_Sys_TestSectionAnswer_Sys_TestSection">
+      <End Role="Sys_TestSection" EntitySet="Sys_TestSection" />
+      <End Role="Sys_TestSectionAnswer" EntitySet="Sys_TestSectionAnswer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_TestSectionQuestion_Sys_TestSectionAnswer" Association="Self.FK_Sys_TestSectionQuestion_Sys_TestSectionAnswer">
+      <End Role="Sys_TestSectionAnswer" EntitySet="Sys_TestSectionAnswer" />
+      <End Role="Sys_TestSectionQuestion" EntitySet="Sys_TestSectionQuestion" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

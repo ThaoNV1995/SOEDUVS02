@@ -1,0 +1,14 @@
+D:\2016\VEDU\SOEDU\SOEDU.Common\bin\Debug\SOEDU.Common.dll
+D:\2016\VEDU\SOEDU\SOEDU.Common\bin\Debug\SOEDU.Common.pdb
+D:\2016\VEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.dll
+D:\2016\VEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Common\bin\Debug\SOEDU.Common.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Common\bin\Debug\SOEDU.Common.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.csprojResolveAssemblyReference.cache
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Common\bin\Debug\SOEDU.Common.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Common\bin\Debug\SOEDU.Common.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Common\obj\Debug\SOEDU.Common.pdb

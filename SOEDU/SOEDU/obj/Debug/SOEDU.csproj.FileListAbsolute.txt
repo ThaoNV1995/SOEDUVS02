@@ -1,0 +1,222 @@
+D:\2016\VEDU\SOEDU\SOEDU\bin\SOEDU.dll.config
+D:\2016\VEDU\SOEDU\SOEDU\bin\SOEDU.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\SOEDU.pdb
+D:\2016\VEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Web.Infrastructure.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Helpers.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Mvc.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Optimization.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.WebPages.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\WebGrease.dll
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Helpers.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Mvc.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Optimization.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.WebPages.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.pdb
+D:\2016\VEDU\SOEDU\SOEDU\bin\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2016\VEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2016\VEDU\SOEDU\SOEDU\obj\Debug\SOEDU.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU\obj\Debug\SOEDU.dll
+D:\2016\VEDU\SOEDU\SOEDU\obj\Debug\SOEDU.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\SOEDU.dll.config
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\SOEDU.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\SOEDU.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\EntityFramework.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Web.Infrastructure.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Owin.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Helpers.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Mvc.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Optimization.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Razor.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\WebGrease.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Helpers.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Mvc.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Optimization.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.Razor.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\EntityFramework.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.csprojResolveAssemblyReference.cache
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.dll.config
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Web.Infrastructure.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Helpers.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Mvc.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Optimization.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\WebGrease.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Helpers.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Mvc.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Optimization.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.dll.config
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Web.Infrastructure.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.Common.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Helpers.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Mvc.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Optimization.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Razor.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\WebGrease.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\SOEDU.Common.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Helpers.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Mvc.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Optimization.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.Razor.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Deployment.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\System.Web.WebPages.Razor.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Newtonsoft.Json.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Antlr3.Runtime.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\EntityFramework.SqlServer.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Google.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.csprojResolveAssemblyReference.cache
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU\obj\Debug\SOEDU.pdb

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="SOEDUEntities">
+    <EntitySetMapping Name="Sys_Assess">
+      <EntityTypeMapping TypeName="Model.Sys_Assess">
+        <MappingFragment StoreEntitySet="Sys_Assess">
+          <ScalarProperty Name="Assess_ID" ColumnName="Assess_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="IsStar" ColumnName="IsStar" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Attach">
+      <EntityTypeMapping TypeName="Model.Sys_Attach">
+        <MappingFragment StoreEntitySet="Sys_Attach">
+          <ScalarProperty Name="Attach_ID" ColumnName="Attach_ID" />
+          <ScalarProperty Name="Lesson_ID" ColumnName="Lesson_ID" />
+          <ScalarProperty Name="File_Name" ColumnName="File_Name" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="FileSource" ColumnName="FileSource" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Course">
+      <EntityTypeMapping TypeName="Model.Sys_Course">
+        <MappingFragment StoreEntitySet="Sys_Course">
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course_Name" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="VideoImg" ColumnName="VideoImg" />
+          <ScalarProperty Name="IsYoutube" ColumnName="IsYoutube" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsValue" ColumnName="IsValue" />
+          <ScalarProperty Name="IsPrice" ColumnName="IsPrice" />
+          <ScalarProperty Name="IsPriceSale" ColumnName="IsPriceSale" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_CourseCategory">
+      <EntityTypeMapping TypeName="Model.Sys_CourseCategory">
+        <MappingFragment StoreEntitySet="Sys_CourseCategory">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="Title_Name" ColumnName="Title_Name" />
+          <ScalarProperty Name="IsIcon" ColumnName="IsIcon" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+          <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Lesson">
+      <EntityTypeMapping TypeName="Model.Sys_Lesson">
+        <MappingFragment StoreEntitySet="Sys_Lesson">
+          <ScalarProperty Name="Lesson_ID" ColumnName="Lesson_ID" />
+          <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+          <ScalarProperty Name="Lesson_Name" ColumnName="Lesson_Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="VideoImg" ColumnName="VideoImg" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+          <ScalarProperty Name="IsStatus" ColumnName="IsStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Section">
+      <EntityTypeMapping TypeName="Model.Sys_Section">
+        <MappingFragment StoreEntitySet="Sys_Section">
+          <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="Section_Name" ColumnName="Section_Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+          <ScalarProperty Name="IsStatus" ColumnName="IsStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_StudentCourse">
+      <EntityTypeMapping TypeName="Model.Sys_StudentCourse">
+        <MappingFragment StoreEntitySet="Sys_StudentCourse">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="IsStatus" ColumnName="IsStatus" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_StudentTest">
+      <EntityTypeMapping TypeName="Model.Sys_StudentTest">
+        <MappingFragment StoreEntitySet="Sys_StudentTest">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="IsDate" ColumnName="IsDate" />
+          <ScalarProperty Name="IsGetTime" ColumnName="IsGetTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_StudentTestSection">
+      <EntityTypeMapping TypeName="Model.Sys_StudentTestSection">
+        <MappingFragment StoreEntitySet="Sys_StudentTestSection">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="TestSection_ID" ColumnName="TestSection_ID" />
+          <ScalarProperty Name="IsDate" ColumnName="IsDate" />
+          <ScalarProperty Name="IsGetTime" ColumnName="IsGetTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Target">
+      <EntityTypeMapping TypeName="Model.Sys_Target">
+        <MappingFragment StoreEntitySet="Sys_Target">
+          <ScalarProperty Name="Target_ID" ColumnName="Target_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+          <ScalarProperty Name="IsStar" ColumnName="IsStar" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TeacherCourse">
+      <EntityTypeMapping TypeName="Model.Sys_TeacherCourse">
+        <MappingFragment StoreEntitySet="Sys_TeacherCourse">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="IsSupper" ColumnName="IsSupper" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="IsStatus" ColumnName="IsStatus" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Test">
+      <EntityTypeMapping TypeName="Model.Sys_Test">
+        <MappingFragment StoreEntitySet="Sys_Test">
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Lesson_ID" ColumnName="Lesson_ID" />
+          <ScalarProperty Name="Test_Name" ColumnName="Test_Name" />
+          <ScalarProperty Name="IsSetTime" ColumnName="IsSetTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TestLesson">
+      <EntityTypeMapping TypeName="Model.Sys_TestLesson">
+        <MappingFragment StoreEntitySet="Sys_TestLesson">
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Lesson_ID" ColumnName="Lesson_ID" />
+          <ScalarProperty Name="Test_Name" ColumnName="Test_Name" />
+          <ScalarProperty Name="IsSetTime" ColumnName="IsSetTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TestLessonAnswer">
+      <EntityTypeMapping TypeName="Model.Sys_TestLessonAnswer">
+        <MappingFragment StoreEntitySet="Sys_TestLessonAnswer">
+          <ScalarProperty Name="Answer_ID" ColumnName="Answer_ID" />
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Answer_Name" ColumnName="Answer_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TestLessonQuestion">
+      <EntityTypeMapping TypeName="Model.Sys_TestLessonQuestion">
+        <MappingFragment StoreEntitySet="Sys_TestLessonQuestion">
+          <ScalarProperty Name="Question_ID" ColumnName="Question_ID" />
+          <ScalarProperty Name="Answer_ID" ColumnName="Answer_ID" />
+          <ScalarProperty Name="Question_Name" ColumnName="Question_Name" />
+          <ScalarProperty Name="IsSupper" ColumnName="IsSupper" />
+          <ScalarProperty Name="IsOK" ColumnName="IsOK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TestSection">
+      <EntityTypeMapping TypeName="Model.Sys_TestSection">
+        <MappingFragment StoreEntitySet="Sys_TestSection">
+          <ScalarProperty Name="TestSection_ID" ColumnName="TestSection_ID" />
+          <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+          <ScalarProperty Name="IsSetTime" ColumnName="IsSetTime" />
+          <ScalarProperty Name="Test_Name" ColumnName="Test_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TestSectionAnswer">
+      <EntityTypeMapping TypeName="Model.Sys_TestSectionAnswer">
+        <MappingFragment StoreEntitySet="Sys_TestSectionAnswer">
+          <ScalarProperty Name="Answer_ID" ColumnName="Answer_ID" />
+          <ScalarProperty Name="TestSection_ID" ColumnName="TestSection_ID" />
+          <ScalarProperty Name="Answer_Name" ColumnName="Answer_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_TestSectionQuestion">
+      <EntityTypeMapping TypeName="Model.Sys_TestSectionQuestion">
+        <MappingFragment StoreEntitySet="Sys_TestSectionQuestion">
+          <ScalarProperty Name="Question_ID" ColumnName="Question_ID" />
+          <ScalarProperty Name="Answer_ID" ColumnName="Answer_ID" />
+          <ScalarProperty Name="Question_Name" ColumnName="Question_Name" />
+          <ScalarProperty Name="IsSupper" ColumnName="IsSupper" />
+          <ScalarProperty Name="IsOK" ColumnName="IsOK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Users">
+      <EntityTypeMapping TypeName="Model.Sys_Users">
+        <MappingFragment StoreEntitySet="Sys_Users">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="IsPassword" ColumnName="IsPassword" />
+          <ScalarProperty Name="IsName" ColumnName="IsName" />
+          <ScalarProperty Name="IsSex" ColumnName="IsSex" />
+          <ScalarProperty Name="IsAdds" ColumnName="IsAdds" />
+          <ScalarProperty Name="IsEmail" ColumnName="IsEmail" />
+          <ScalarProperty Name="IsMobile" ColumnName="IsMobile" />
+          <ScalarProperty Name="IsDes" ColumnName="IsDes" />
+          <ScalarProperty Name="IsFoto" ColumnName="IsFoto" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="IsLevel" ColumnName="IsLevel" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

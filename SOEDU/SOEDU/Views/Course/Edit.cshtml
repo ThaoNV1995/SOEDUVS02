@@ -1,0 +1,520 @@
+﻿@model SOEDU.Models.CourseModel
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/Local/_LayoutUser.cshtml";
+    var assess = (IEnumerable<SOEDU.Models.AssessModels>)ViewBag.Assess;
+}
+<script src="~/Content/js/jquery-1.10.2.min.js"></script>
+<div class="modal fade" id="edit-cm-video" tabindex="-1" role="dialog" aria-labelledby="edit-cm-video-label" aria-hidden="true">
+    <div class="modal-dialog" style="">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Đóng</span></button>
+                <h4 class="modal-title" id="edit-cm-video-label">Thay đổi video</h4>
+            </div>
+            <div class="modal-body">
+                <form id="UpdateVideo" class="zBlock form-horizontal isEdit ng-pristine ng-valid" method="POST" action="/Course/UpdateVideo" enctype="multipart/form-data" novalidate="novalidate">
+                    @Html.HiddenFor(model => model.Course_ID);
+                    <div class="add-menu-box post-start-box">
+                        <!-- <div z-alerts-top></div> -->
+                        <div class="row menu-box-top post-start-input">
+                            <div class="col-md-12 no-padding">
+                                <h2>Đăng tải video</h2>
+
+                                <div class="form-group">
+                                    <span>
+
+                                        @Html.RadioButtonFor(model => model.IsYoutube, "false", new { @id = "st", @checked = "checked" })
+                                        @Html.LabelFor(model => model.IsYoutube, "Upload Video")
+                                    </span>
+                                    <span style="margin-left:5px">
+                                        @Html.RadioButtonFor(model => model.IsYoutube, "true", new { @id = "stn" })
+                                        <label for="IsActive">Link Youtube</label>
+                                    </span>
+                                </div>
+                                <div id="upload">
+                                    <input type="file" id="FileUpload" name="FileUpload" multiple />
+
+                                    <br />
+                                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                        <div class="progress-bar progress-bar-success" style="width:0%;">
+                                        </div>
+                                    </div>
+
+                                    <span class="timeRemaining">0</span>
+                                    <span class="up">0</span>
+                                    <span class="recievedValue">0</span>
+                                    <span class="totalValue">0</span>
+                                    <span class="col-lg-5 fileupload-progress fade">
+                                    </span>
+                                    <br />
+                                </div>
+                                <div id="youtube">
+                                    @Html.TextBoxFor(model => model.Video, new { @class = "form-control", required = "required", valid = true })
+                                </div>
+
+                                <div id="thumb">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <script>
+                        $(document).on('ready', function () {
+                            var files = [];
+                            var filename = [];
+                            $('#FileUpload').on('change', prepareUpload);
+                            function prepareUpload(event) {
+                                var formData = new FormData();
+                                var totalFiles = document.getElementById("FileUpload").files.length;
+                                for (var i = 0; i < totalFiles; i++) {
+                                    var file = document.getElementById("FileUpload").files[i];
+
+                                    formData.append("FileUpload", file);
+                                };
+                                var courseId = $('#Course_ID').val();
+                                formData.append("Course_ID", courseId);
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '/Course/UpVideoThumb',
+                                    data: formData,
+                                    xhr: function () {
+                                        var xhr = new window.XMLHttpRequest();
+                                        var started_at = new Date();
+                                        xhr.upload.addEventListener('progress', function (e) {
+                                            if (e.lengthComputable) {
+                                                // Append progress percentage.
+                                                var loaded = e.loaded;
+                                                var total = e.total;
+                                                var progressValue = Math.round((loaded / total) * 100);
+
+                                                // Bytes received.
+                                                jQuery('.recievedValue').html('');
+                                                jQuery('.recievedValue').append(formatFileSize(loaded) + ' / ');
+
+                                                // Total bytes.
+                                                jQuery('.totalValue').html('');
+                                                jQuery('.totalValue').append(formatFileSize(total));
+
+                                                // Time Remaining
+                                                var seconds_elapsed = (new Date().getTime() - started_at.getTime()) / 1000;
+                                                var bytes_per_second = seconds_elapsed ? loaded / seconds_elapsed : 0;
+                                                var Kbytes_per_second = bytes_per_second / 1000;
+                                                var remaining_bytes = total - loaded;
+                                                var seconds_remaining = seconds_elapsed ? remaining_bytes / bytes_per_second : 'calculating';
+                                                jQuery('.timeRemaining').html('');
+                                                jQuery('.timeRemaining').append(seconds_remaining);
+
+                                                jQuery('.up').html(progressValue + "%");
+                                                // Percentage.
+                                                //progressElement.find('input').val(progressValue).change();
+                                                $('.progress-bar.progress-bar-success').css("width", +progressValue + "%")
+                                            }
+                                        }, false);
+                                        return xhr;
+                                    },
+                                    dataType: 'json',
+                                    contentType: false,
+                                    processData: false,
+                                    success: function (response) {
+                                        console.log(response);
+                                        var thb = '';
+                                        for (var i = 0; i < response.length; i++) {
+                                            thb += '<label class="lbInLine">';
+                                            thb += '<input type="radio" id="rThumb1" name="thumb" value="' + response[i] + '" checked="checked">';
+                                            thb += '<img height="90" width="160" id="img1" src="' + response [i]+ '">';
+                                            thb += '</label>';
+                                        }
+                                        $('#thumb').html(thb);
+                                    },
+                                    error: function (error) {
+                                        console.log(error);
+                                        alert("errror");
+                                    }
+                                });
+                            }
+                            $('#upload').hide();
+                            $('#youtube').show();
+                            var url = $('input[name="IsYoutube"]:checked', 'form#UpdateVideo').val();
+                            if (url == "true") {
+                                $('#upload').hide();
+                                $('#youtube').show();
+                            }
+                            else {
+                                $('#upload').show();
+                                $('#youtube').hide();
+                            }
+                            $('form#UpdateVideo input').on('change', function () {
+                                var url = $('input[name="IsYoutube"]:checked', 'form#UpdateVideo').val();
+                                if (url == "true") {
+                                    $('#upload').hide();
+                                    $('#youtube').show();
+                                }
+                                else {
+                                    $('#upload').show();
+                                    $('#youtube').hide();
+                                }
+                            });
+                            function formatFileSize(sizeinbytes) {
+                                //var sizeinbytes = document.getElementById('FileUpload').files[0].size;
+                                var fSExt = new Array('Bytes', 'KB', 'MB', 'GB');
+                                fSize = sizeinbytes; i = 0; while (fSize > 900) { fSize /= 1024; i++; }
+
+                                return (Math.round(fSize * 100) / 100) + ' ' + fSExt[i];
+                            }
+                        });
+                    </script>
+
+                    <script>
+                        $(document).on('ready', function () {
+                            var videoType = '';
+                            $('.cm-video .uploadVideo').click(function () {
+                                videoType = $(this).data('type');
+                            });
+                            var setMediaId = function (videoType, mediaId) {
+                                $('#' + videoType).val(mediaId);
+                            }
+                            window.addEventListener("message", receiveMessage, false);
+                            function receiveMessage(event) {
+                                if (event.origin !== "http://cp.mp3.zing.vn" || event.data == undefined) {
+                                    return false;
+                                }
+                                var data = jQuery.parseJSON(event.data);
+                                setMediaId(videoType, data.media_id);
+                                $('#edit-cm-video').modal('hide');
+                                $('#newCourseSubmit').click();
+                            }
+                        });
+                    </script>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="zn-btn" data-dismiss="modal">Đóng</button>
+                <button type="button" class="zn-btn btn-success btn-save">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cm-preview-video" tabindex="-1" role="dialog" aria-labelledby="cm-preview-video-label" aria-hidden="true">
+    <div class="modal-dialog" style="width: 800px!important;">
+
+        <script src="~/Scripts/jwplayer.js"></script>
+        <script>jwplayer.key = "TYLbxm3336T+Ucr96YvO3c9FePiCXLHLhc9ZdA==";</script>
+        <div id="myElement">Loading the player...</div>
+        <script type="text/javascript">
+            $(document).on('ready', function () {
+                $('#play').click(function () {
+                    var playerInstance = jwplayer("myElement");
+                    playerInstance.setup({
+                        "flashplayer": "js/player.swf",
+
+                        sources: [{
+                            file: 'http://192.168.1.127:8888/Content/Img/@Model.Video',
+                            label: '480', type: 'mp4',
+                            label: "720",
+                            type: "mp4"
+                        }],
+                        width: 790,
+                        height: 470,
+                        autostart: true,
+                        "allowfullscreen": "true",
+                        "controlbar": "bottom",
+                    });
+                });
+                $('.modal-backdrop').click(function () {
+                    alert(12);
+                })
+            });
+            
+        </script>
+
+    </div>
+</div>
+<div class="body bordered-box box">
+    <div class="content">
+        <div class="zn-tab-content">
+            <div id="myTabContent" class="tab-content">
+                <form id="addNewCourse" class="zBlock form-horizontal isEdit ng-pristine ng-valid" method="POST" action="/Course/Edit" enctype="multipart/form-data" novalidate="novalidate">
+                    @Html.HiddenFor(model => model.Course_ID);
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-h2"><i class="fa fa-columns"></i> Thông tin cơ bản</div>
+                            <div class="form-group">
+                                <label for="courseTitle" class="col-sm-3 control-label">Tên khóa học <font class="required" color="red">*</font></label>
+                                <div class="col-sm-9">
+                                    @Html.TextBoxFor(model => model.Course_Name, new { @class = "form-control", required = "required", valid = true })
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="courseCover" class="col-sm-3 control-label">Hình đại diện</label>
+                                <div class="col-sm-9">
+                                    <div id="course-cover-box" class="course-image-box">
+                                        <img src="@Model.Avatar" class="courseCover ccAvatar img-polaroid" width="240" id="Icon">
+                                    </div>
+                                    <canvas id="crop-canvas" style="display: none;"></canvas>
+                                    <input type="file" name="courseCover" id="courseCoverSelector" class="course-image-selector" onchange="readURL(this)" accept="image/jpeg, image/png">
+                                    <label for="courseCoverSelector" class="course-cover-label">
+                                        <span class="zn-btn btn-medium btn-success" id="course-cover-btn">Thay đổi</span>
+                                    </label>
+                                    <p class="course-image-desc">Kích thước hình đại diện là 480 x 270 px.</p>
+                                    <input type="hidden" name="courseCoverBase64" id="courseCoverBase64">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-columns"></i> Lĩnh Vực</div>
+                            <div class="form-group">
+                                <label for="courseIsPrivate" class="control-label col-sm-3">Phân loại khoá học <font class="required" color="red">*</font></label>
+                                <div class="col-sm-9">
+                                    @Html.DropDownListFor(i => i.Category_ID, (IEnumerable<SelectListItem>)ViewData["Category"], new { @class = "form-control" })
+                                </div>
+                            </div>
+
+
+                            <script>
+                                $(document).on('ready', function () {
+                                    $('#courseType').on('change', function () {
+                                        if ($(this).val() == -1) {
+                                            $('#courseTypeDetailFormGroup').length && $('#courseTypeDetailFormGroup').show();
+                                            $('#courseSubjectFormGroup').show();
+                                            $('#courseFieldFormGroup').hide();
+                                        } else if ($(this).val() == 5) { // kỹ năng
+                                            $('#courseTypeDetailFormGroup').hide();
+                                            $('#courseSubjectFormGroup').hide();
+                                            $('#courseFieldFormGroup').show();
+                                        } else { // Prep 10
+                                            $('#courseTypeDetailFormGroup').length && $('#courseTypeDetailFormGroup').hide();
+                                            $('#courseSubjectFormGroup').show();
+                                            $('#courseFieldFormGroup').hide();
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-columns"></i> Chi tiết</div>
+                            <div class="form-group">
+                                <label for="courseDescription" class="control-label col-sm-3">Giới thiệu về khóa học</label>
+                                <div class="col-sm-9">
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control ckeditor" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="courseDescription" class="control-label col-sm-3">Mục tiêu khóa học</label>
+                                <div class="col-sm-9 cm-list">
+                                    <div class="cm-list-items">
+                                        @foreach (var item in assess.OrderBy(x => x.IsStar))
+                                        {
+                                            <div class="cm-list-item default">
+                                                <input type="text" class="form-control" placeholder="Mục tiêu" name="courseTarget" value="@item.Description">
+                                                <a class="fa fa-trash-o"></a>
+                                            </div>
+                                        }
+                                    </div>
+                                    <button type="button" class="cm-add-list-item zn-btn btn-medium btn-success"><i class="fa fa-plus"></i> Thêm mục tiêu</button>
+                                </div>
+                            </div>
+
+
+                            <script type="text/javascript">
+                                var list;
+                                $(document).on('ready', function () {
+                                    $(document)
+                                    .on('click', '.cm-list-item .fa-trash-o', function () {
+                                        var listItem = $(this).closest('.cm-list-item');
+                                        listItem.remove();
+                                    })
+                                    .on('click', 'button.cm-add-list-item', function () {
+                                        list = $(this).closest('.cm-list');
+
+                                        var htmlEl = list.find('.default').clone();
+                                        htmlEl.removeClass('default');
+                                        html = htmlEl.wrap('<p>').parent().html();
+                                        list.find('.cm-list-items').append(html);
+
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-gears"></i> Cài đặt</div>
+                            <div class="form-group">
+                                <label for="coursePrice" class="control-label col-sm-3">Học phí</label>
+                                <div class="col-sm-9">
+                                    <div class="switch">
+
+                                        @Html.CheckBoxFor(model => model.IsValue, new { @id = "coursePrice", @class = "cmn-toggle cmn-toggle-round big" })
+                                        <label id="coursePrice">
+                                            <span id="courseP"></span>
+                                                <b>Có phí</b>
+                                                <span>Miễn phí</span>
+</label>
+                                    </div>
+                                    <div class="course-price-fade-el">
+                                        @Html.TextBoxFor(model => model.IsPrice, new { @class = "form-control", required = "required", valid = true })
+
+                                        <label for="coursePriceDetail" class="control-label coursePriceDetailLabel">VND</label> (học phí thực tế học sinh phải trả)
+                                    </div>
+                                    <div class="course-price-fade-el">
+                                        @Html.TextBoxFor(model => model.IsPriceSale, new { @class = "form-control", required = "required", valid = true })
+
+                                        <label for="coursePriceDetail" class="control-label coursePriceDetailLabel">VND</label> (học phí trước khi giảm, áp dụng cho chương trình khuyến mại)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                var ZUNI_COURSE_INFO = {
+                                    courseId: 2431,
+                                    subjectId: 0
+                                };
+                                $(document).on('ready', function () {
+                                    $('#coursePrice').on('change', function () {
+                                        if ($(this).is(':checked')) {
+                                            $('.course-price-fade-el').fadeIn(function () {
+                                                $(this).find('input').focus();
+                                            });
+                                        } else {
+                                            $('.course-price-fade-el').fadeOut();
+                                        }
+                                    });
+                                    if ($('#coursePrice').is(':checked')) {
+                                        $('.course-price-fade-el').show();
+                                    }
+                                    // Set Price is number only
+                                    var numberPrice = function () { $('#coursePriceDetail').val($('#coursePriceDetail').val().replace(/[^0-9]/g, '')); }
+                                    numberPrice();
+                                    $('#coursePriceDetail').focusout(function () { numberPrice(); });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row cm-video-block">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-film"></i> Videos</div>
+                            <div class="cm-video">
+                                <div class="text help-link-container">
+                                    <span>Video giới thiệu</span>
+                                    <span class="help-link" data-toggle="tooltip" title="Video giới thiệu khóa học tới học viên.">[<b>?</b>]</span>
+                                </div>
+                                @*<div class="video-box zn-video-box">
+                                    <span class="icon">
+                                        <i class="fa fa-film"></i>
+                                    </span>
+                                    
+                                    <script src="~/Scripts/jwplayer.js"></script>
+                                    <script>jwplayer.key = "TYLbxm3336T+Ucr96YvO3c9FePiCXLHLhc9ZdA==";</script>
+                                    <div id="myElement">Loading the player...</div>
+                                    <script type="text/javascript">
+                                                var playerInstance = jwplayer("myElement");
+                                                playerInstance.setup({
+                                                    "flashplayer": "js/player.swf",
+                                                  
+                                                    sources: [{
+                                                        file: 'http://192.168.1.127:8888/video/vd.mp4',
+                                                        label: '480', type: 'mp4',
+                                                        label: "720",
+                                                        type: "mp4"
+                                                    }],
+                                                    width: 340,
+                                                    height: 160,
+                                                    "allowfullscreen": "true",
+                                                    "controlbar": "bottom",
+
+                                                });
+                                    </script>
+                                    
+                                    <div class="edit-btn uploadVideo" data-type="video_intro" data-toggle="modal" data-target="#edit-cm-video">
+                                        <i class="fa fa-pencil"></i> Thay đổi
+                                    </div>
+                                </div>*@
+
+                                <div class="video-box zn-video-box">
+                                    <img src="@Model.VideoImg">
+                                    <span class="icon">
+                                        <i class="fa fa-youtube-play cm-preview-video-btn" id="play" data-toggle="modal" data-target="#cm-preview-video"></i>
+                                    </span>
+                                    <div class="edit-btn uploadVideo" data-type="video_intro" data-toggle="modal" data-target="#edit-cm-video">
+                                        <i class="fa fa-pencil"></i> Thay đổi
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <script>
+                                $(document).on('ready', function () {
+                                    $(document).on('click', '.cm-preview-video-btn', function () {
+                                        if (typeof $(this).data('id') !== 'undefined' && $(this).data('id') != '') {
+                                            var url = 'http://tv.zing.vn/embed/video/' + $(this).data('id');
+                                            $('#cm-preview-video iframe').attr('src', url);
+                                            $('#cm-preview-video').modal('show');
+                                            $('#cm-preview-video').on('hidden.bs.modal', function () {
+                                                $('#cm-preview-video iframe').attr('src', null);
+                                            });
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-button-footer zn3-button-group">
+                                <button type="submit" class="zn-btn btn-success btn-save zn3-submit zn-save-settings" id="newCourseSubmit">
+                                    Lưu
+                                </button>
+                                <button type="button" class="zn-btn">Hủy</button>
+                                <div class="spinner" style="display: none;">
+                                    <div class="rect1"></div>
+                                    <div class="rect2"></div>
+                                    <div class="rect3"></div>
+                                    <div class="rect4"></div>
+                                    <div class="rect5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jqueryval")
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Icon').attr('src', e.target.result);
+                $('#Icon').show();
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+

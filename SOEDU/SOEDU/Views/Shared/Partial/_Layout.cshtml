@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+        @Styles.Render("~/Content/css")
+    <link href="~/Content/css/sdolstyle.css" rel="stylesheet" />
+    <link href="~/Content/css/so-course.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="sto-wrapper">
+        <!--Begin Header-->
+        <div class="header">
+            <!--Header top-->
+            @RenderPage("_Header.cshtml")
+            <!--End Header Top-->
+        </div>
+        <!--Form Login-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <h4 class="modal-title" id="myModalLabel">Đăng Nhập</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="sto-login-title">
+                                <div class="sto-login-title-name col-lg-6">
+                                    <span>Đăng Nhập</span>
+                                </div>
+                                <div class="sto-login-social social-buttons col-lg-6">
+                                    <a class="btn btn-block btn-social btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                        <span class="fa fa-facebook"></span> Đăng Nhập Với Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="sto-register-now col-lg-12">
+                                    <span>Bạn Chưa Có Tài Khoản Hãy ?</span><a href="#">Đăng ký Ngay</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-horizontal col-lg-8 col-lg-offset-2">
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="Email" data-parsley-minlength="6" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-key"></i>
+                                                </span>
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật Khẩu">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-6">
+                                            <div class="checkbox-inline"><label><input type="checkbox"> Ghi Nhớ Tài Khoản</label></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#">Quên Tài Khoản?</a>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary">Đăng Nhập</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="line_orn"></div>
+                    <div class="modal-footer">
+                        <strong>Study Online</strong> Cộng đồng học Online<strong>MIỄN PHÍ</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Form Login-->
+        <!--Form Create Course-->
+        <div class="modal fade" id="myCreateCourse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <h4 class="modal-title" id="myModalLabel">Tạo khóa học mới</h4>
+                    </div>
+                    <div class="modal-body" ng-controller="app.course.CourseController as cs">
+                        <form id="addNewCourse" class="form-horizontal zn-form ng-pristine ng-valid" ng-submit="cs.addCourse(cs.newCourse)"  novalidate="novalidate">
+                            <div class="cm-h2">
+                                <i class="fa fa-plus-square"></i> Tạo khóa học mới
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="courseTitle" class="col-sm-3 control-label">Tên khóa học <font class="required" color="red">*</font></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="courseTitle" name="courseTitle" ng-model="cs.newCourse.Course_Name" placeholder="Tên khóa học" value="">
+                                
+                                </div>
+                            </div>
+                            <div class="cm-button-footer zn3-button-group">
+
+                                <!-- <button type="button" class="zn-btn">Hủy</button> -->
+                                <div class="spinner" style="display: none;">
+                                    <div class="rect1"></div>
+                                    <div class="rect2"></div>
+                                    <div class="rect3"></div>
+                                    <div class="rect4"></div>
+                                    <div class="rect5"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="add-menu-box post-start-box">
+                                <!-- <div z-alerts-top></div> -->
+                                @*<div class="row menu-box-top post-start-input">
+                    <div class="col-md-12 no-padding">
+                        <div class="col-md-6 no-padding post-start-input-left boder-right-dotted">
+                            <div class="textarea-part">
+                                <span class="green-text cmn-icon"><i class="pz-i-post"></i></span>
+                                <textarea placeholder="What's on your mind?" ng-model="newKnowledge.message" z-atwho="" mention-group="userGroup,Company,IdeaSpace" ng-change="onMessageChange()" nv-file-drop="" uploader="uploaderService.uploader" ng-paste="uploaderService.pasteEvent($event)" class="ng-valid ng-touched ng-dirty ng-valid-parse" style="overflow: hidden; word-wrap: break-word; resize: none; height: 60px;"></textarea>
+                                <div class="z-emoji-post ng-isolate-scope" placement="'bottom'" uib-tooltip="Emoticons" tooltip-placement="top">
+                                    <i class="fa fa-smile-o" uib-popover-template="'views/partials/common/emoji-select.html'" popover-placement="auto bottom" popover-append-to-body="true" popover-class="popover-admin" popover-trigger="outsideClick" popover-is-open="isOpenEmojiPicker"></i>
+                                </div>
+                                <i class="fa fa-paperclip bt-icon fileinput-button" uib-tooltip="Attach your files">
+                                    <input type="file" nv-file-select="" uploader="uploaderService.uploader" name="files[]" multiple="">
+                                </i>
+
+                                <div class="pull-right bottom-option-part">
+                                    <div class="share-option-post">
+                                        <span class="dropdown-toggle ng-binding" data-toggle="dropdown"> Public  <span class="caret"></span></span>
+                                        <div class="dropdown-menu option-post-dropdown">
+                                            <ul>
+                                                <!-- ngRepeat: op in shareOption -->
+                                                <li class="span2 ng-scope" ng-repeat="op in shareOption">
+                                                    <span href="" ng-click="selectOptionShare(op)" ng-class="selectedOption.saveItem == op.saveItem ? 'orange-text' : ''" class="ng-binding orange-text">
+                                                        <!-- ngIf: selectedOption.saveItem == op.saveItem --><i ng-if="selectedOption.saveItem == op.saveItem" class="fa fa-check ng-scope"></i><!-- end ngIf: selectedOption.saveItem == op.saveItem --> Public
+                                                    </span>
+                                                </li><!-- end ngRepeat: op in shareOption -->
+                                                <li class="span2 ng-scope" ng-repeat="op in shareOption">
+                                                    <span href="" ng-click="selectOptionShare(op)" ng-class="selectedOption.saveItem == op.saveItem ? 'orange-text' : ''" class="ng-binding">
+                                                        <!-- ngIf: selectedOption.saveItem == op.saveItem --> Joined Spaces
+                                                    </span>
+                                                </li><!-- end ngRepeat: op in shareOption -->
+                                                <li class="span2 ng-scope" ng-repeat="op in shareOption">
+                                                    <span href="" ng-click="selectOptionShare(op)" ng-class="selectedOption.saveItem == op.saveItem ? 'orange-text' : ''" class="ng-binding">
+                                                        <!-- ngIf: selectedOption.saveItem == op.saveItem --> Custom
+                                                    </span>
+                                                </li><!-- end ngRepeat: op in shareOption -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- attachment file -->
+                            <div class="attachment-file-update">
+                                <div class="" style="width: 100%" z-uploader-srv="uploaderService" show-thumbnail="true" hide-upload-icon="true">
+                                    <!-- ngIf: !hideUploadIcon && uploaderService !== undefined -->
+                                    <!-- ngRepeat: alert in uploaderService.alerts -->
+                                    <!-- ngIf: uploaderService.attachments.length > 0 || uploaderService.uploader.progress >= 0 --><div class="view-attachments va-show-upload ng-scope" ng-if="uploaderService.attachments.length > 0 || uploaderService.uploader.progress >= 0">
+                                        <div class="processing-upload">
+                                            <!-- ngIf: uploaderService.uploader.isUploading -->
+                                        </div>
+                                        <!-- ngIf: showuploaded && uploaderService.attachments.length > 0 -->
+                                    </div><!-- end ngIf: uploaderService.attachments.length > 0 || uploaderService.uploader.progress >= 0 -->
+                                </div>
+                            </div>
+                            <!-- Parse result -->
+                            <!-- ngIf: service.parseLinkProcessing == true || resultParse.link != null -->
+                        </div>
+                        <div class="col-md-6 no-padding post-start-input-right">
+                            <div class="pr-content">
+                                <p class="orange-text ng-binding">Post to  Public</p>
+                                <!-- ngIf: selectedOption.saveItem=='IdeaSpaces' -->
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+                                <!-- ngIf: showTip --><div class="row menu-top-tooltip post-start-tooltip ng-scope">
+                                    <div class="col-md-12 no-padding">
+                                        <div class="col-md-6">
+                                            <p class="text-left">About</p>
+                                            <p class="tooltip-content">
+                                                An Update is the most basic way to share information with others. Use the update feature to send
+                                                quick updates to followers, share a great new invention or idea, and to effectively engage your
+                                                followers and other members. Keeping your updates brief and concise will help others better
+                                                understand your update.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-left">Tips</p>
+                                            <p class="tooltip-content">
+                                                Zillable has created our very own set of Emoticons that you can add to each update. To use an
+                                                Emoticon, just click on the smiley face icon on the bottom left of your update to select the
+                                                Emoticon you want to use. Warning: Our Emoticons are very different so have fun using them!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="got-it-box">
+                                            <a href="javascript:void(0);" ng-click="putTip()"><span>OK, got it.</span> Do not show this again.</a>
+                                        </div>
+                                    </div>
+                                </div><!-- end ngIf: showTip -->
+
+                                <div class="row button-post-group text-right">
+                                    <button type="submit" class="btn-menu-success" >Tạo khóa học</button>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                  
+                    <div class="line_orn"></div>
+                    <div class="modal-footer">
+                        <strong>Study Online</strong> Cộng đồng học Online<strong>MIỄN PHÍ</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Form Create Course-->
+        <!--End Header-->
+
+        <div class="sto-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        @RenderPage("_MenuLeft.cshtml")
+                        <div class="col-lg-6 col-md-6 col-sm-8 nopadding-xs nopadding-sm">
+                            <!--Slider-->
+                            @RenderPage("_Slider.cshtml")
+                            <!--End Slider-->
+                        </div>
+                        @RenderPage("_HotNews.cshtml")
+                    </div>
+                </div>
+                @RenderBody()
+            </div>
+        </div>
+        <footer>
+            @RenderPage("_Footer.cshtml")
+        </footer>
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+ 
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $.scrollUp({
+                    scrollName: 'scrollUp', // Element ID
+                    scrollDistance: 100, // Distance from top/bottom before showing element (px)
+                    scrollFrom: 'top', // 'top' or 'bottom'
+                    scrollSpeed: 300, // Speed back to top (ms)
+                    easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+                    animation: 'fade', // Fade, slide, none
+                    animationSpeed: 200, // Animation in speed (ms)
+                    scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
+                    //scrollTarget: false, // Set a custom target element for scrolling to the top
+                    scrollText: '<i class="fa fa-angle-up"></i>', // Text for element, can contain HTML
+                    scrollTitle: false, // Set a custom <a> title if required.
+                    scrollImg: false, // Set true to use image
+                    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                    zIndex: 2147483647 // Z-Index for the overlay
+                });
+            });
+            /* featured-products slider */
+            $("#featured-course .owl").owlCarousel({
+                autoPlay: false,
+                items: 4,
+                itemsDesktop: [1199, 4],
+                itemsDesktopSmall: [991, 3],
+                itemsTablet: [767, 2],
+                itemsMobile: [480, 1],
+                slideSpeed: 3000,
+                paginationSpeed: 3000,
+                rewindSpeed: 3000,
+                navigation: true,
+                stopOnHover: true,
+                pagination: false,
+                scrollPerPage: true,
+            });
+
+           
+
+          
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50ef0fb1f3ca4672adaa2ff59059a555" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="Model.Sys_Assess" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Attach" Width="1.5" PointX="7.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Course" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_CourseCategory" Width="1.5" PointX="1.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Lesson" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Section" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_StudentCourse" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_StudentTest" Width="1.5" PointX="9.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_StudentTestSection" Width="1.5" PointX="7.5" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Target" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TeacherCourse" Width="1.5" PointX="9" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Test" Width="1.5" PointX="7.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TestLesson" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TestLessonAnswer" Width="1.5" PointX="9.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TestLessonQuestion" Width="1.5" PointX="12" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TestSection" Width="1.5" PointX="5.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TestSectionAnswer" Width="1.5" PointX="7.5" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_TestSectionQuestion" Width="1.5" PointX="9.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sys_Users" Width="1.5" PointX="3.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Sys_Assess_Sys_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Attach_Sys_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Course_Sys_CourseCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Section_Sys_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentCourse_Sys_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Target_Sys_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TeacherCourse_Sys_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_CourseCategory_Sys_CourseCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Lesson_Sys_Lesson1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Lesson_Sys_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Test_Sys_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TestSection_Sys_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentCourse_Sys_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentTest_Sys_Test" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentTest_Sys_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentTest_TestLesson" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentTestSection_Sys_TestSection" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_StudentTestSection_Sys_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Target_Sys_Target" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_Target_Sys_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TeacherCourse_Sys_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TestLessonAnswer_Sys_Test" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TestLessonAnswer_TestLesson" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TestLessonQuestion_Sys_TestLessonAnswer" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TestSectionAnswer_Sys_TestSection" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sys_TestSectionQuestion_Sys_TestSectionAnswer" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

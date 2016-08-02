@@ -1,0 +1,46 @@
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.dll
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.pdb
+D:\2016\VEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.dll
+D:\2016\VEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.pdb
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.dll
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\2016\VEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.csprojResolveAssemblyReference.cache
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.csprojResolveAssemblyReference.cache
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Repository.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Common.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Common.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\bin\Debug\SOEDU.Entities.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Repository\obj\Debug\SOEDU.Repository.pdb

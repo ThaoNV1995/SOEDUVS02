@@ -1,0 +1,212 @@
+D:\2016\VEDU\SOEDU\WebApiService\bin\WebApiService.dll.config
+D:\2016\VEDU\SOEDU\WebApiService\bin\WebApiService.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\WebApiService.pdb
+D:\2016\VEDU\SOEDU\WebApiService\bin\Antlr3.Runtime.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\EntityFramework.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\EntityFramework.SqlServer.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Google.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Web.Infrastructure.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Newtonsoft.Json.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\Owin.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Net.Http.Formatting.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Cors.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Helpers.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.Cors.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.Owin.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.WebHost.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Mvc.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Optimization.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Razor.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Deployment.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.WebPages.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Razor.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\WebGrease.dll
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.Cors.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Newtonsoft.Json.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Net.Http.Formatting.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Helpers.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.WebHost.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Mvc.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Optimization.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Razor.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.WebPages.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Deployment.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Razor.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Antlr3.Runtime.pdb
+D:\2016\VEDU\SOEDU\WebApiService\bin\EntityFramework.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\EntityFramework.SqlServer.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Google.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2016\VEDU\SOEDU\WebApiService\bin\System.Web.Http.Owin.xml
+D:\2016\VEDU\SOEDU\WebApiService\obj\Debug\SOEDU.API.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\WebApiService\obj\Debug\WebApiService.dll
+D:\2016\VEDU\SOEDU\WebApiService\obj\Debug\WebApiService.pdb
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\WebApiService.dll.config
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\WebApiService.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\WebApiService.pdb
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Antlr3.Runtime.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.SqlServer.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Google.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Web.Infrastructure.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Newtonsoft.Json.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Net.Http.Formatting.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Cors.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Helpers.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Cors.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.WebHost.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Mvc.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Optimization.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Deployment.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\WebGrease.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Cors.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Newtonsoft.Json.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Net.Http.Formatting.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Helpers.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.WebHost.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Mvc.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Optimization.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Deployment.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Antlr3.Runtime.pdb
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.SqlServer.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Google.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\obj\Debug\SOEDU.API.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\obj\Debug\WebApiService.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\obj\Debug\WebApiService.pdb
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Entities.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Service.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Repository.dll
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Entities.pdb
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Service.pdb
+D:\2016\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Repository.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\obj\Debug\SOEDU.API.csprojResolveAssemblyReference.cache
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\WebApiService.dll.config
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\WebApiService.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\WebApiService.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Antlr3.Runtime.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.SqlServer.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Google.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Web.Infrastructure.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Newtonsoft.Json.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Common.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Entities.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Service.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Net.Http.Formatting.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Cors.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Helpers.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Cors.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.WebHost.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Mvc.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Optimization.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Razor.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Deployment.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Razor.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\WebGrease.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Repository.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Common.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Entities.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Service.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Cors.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Newtonsoft.Json.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Net.Http.Formatting.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Helpers.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.WebHost.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Mvc.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Optimization.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Razor.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Deployment.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.WebPages.Razor.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Antlr3.Runtime.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\EntityFramework.SqlServer.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Google.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\System.Web.Http.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\bin\SOEDU.Repository.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\obj\Debug\WebApiService.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\WebApiService\obj\Debug\WebApiService.pdb

@@ -1,0 +1,180 @@
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll.config
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.pdb
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.pdb
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\2016\VEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.dll
+D:\2016\VEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll.config
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Owin.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.pdb
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.csprojResolveAssemblyReference.cache
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.dll
+E:\_Study\_SourceCode\_SourseGithub\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll.config
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.pdb
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.csprojResolveAssemblyReference.cache
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.dll
+D:\2016\VEDU\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll.config
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Tests.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Common.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Helpers.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Mvc.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Razor.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\System.Web.Optimization.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\EntityFramework.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\SOEDU.Common.pdb
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.csprojResolveAssemblyReference.cache
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.dll
+D:\2016\Thang 6\VEDU\SOEDU\SOEDU\SOEDU.Tests\obj\Debug\SOEDU.Tests.pdb

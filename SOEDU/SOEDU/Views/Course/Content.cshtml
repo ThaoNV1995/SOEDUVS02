@@ -1,0 +1,477 @@
+﻿
+@{
+    ViewBag.Title = "Content";
+    Layout = "~/Views/Shared/Local/_LayoutUser.cshtml";
+}
+
+<div class="body bordered-box box">
+    <div class="content">
+        <div class="zn-tab-content">
+            <div id="myTabContent" class="tab-content">
+                <form id="addNewCourse" class="zBlock form-horizontal isEdit ng-pristine ng-valid" method="POST" action="/quan-ly-khoa-hoc/2431/cai-dat-thong-tin" enctype="multipart/form-data" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-h2">
+                                <i class="fa fa-info-circle"></i> Thông tin cơ bản
+                                <i class="zn-form-info"><font class="required" color="red">*</font> là bắt buộc điền</i>
+                            </div>
+                            <div class="form-group">
+                                <label for="courseTitle" class="col-sm-3 control-label">Tên khóa học <font class="required" color="red">*</font></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="courseTitle" name="courseTitle" placeholder="Tên khóa học" value="Concevez votre site web avec PHP et MySQL">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="courseStartTime" class="col-sm-3 control-label">Thời gian từ <font class="required" color="red">*</font></label>
+                                <div class="col-sm-9">
+                                    <div class="row">
+                                        <div class="input-daterange">
+                                            <div class="col-xs-3">
+                                                <input id="courseStartTime" name="courseStartTime" type="text" class="form-control" value="18/07/2016">
+                                            </div>
+                                            <label for="courseEndTime" class="col-xs-1 control-label">đến</label>
+                                            <div class="col-xs-3">
+                                                <fieldset id="courseEndTimeFieldset" disabled="disabled">
+                                                    <input id="courseEndTime" name="courseEndTime" type="text" class="form-control" value="" data-default-value="">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input id="courseUnlimitTime" name="courseUnlimitTime" type="checkbox" value="true" checked="" data-fieldset="courseEndTimeFieldset">
+                                                    Vô thời hạn
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="courseCover" class="col-sm-3 control-label">Hình đại diện</label>
+                                <div class="col-sm-9">
+                                    <div id="course-cover-box" class="course-image-box">
+                                        <img src="http://stc.zuni.vn/resource/module/default/layout/image/course_no_image.jpg" class="courseCover ccAvatar img-polaroid" width="240" onerror="Zuni.Layout.fixErrorImgs(this);">
+                                    </div>
+                                    <canvas id="crop-canvas" style="display: none;"></canvas>
+                                    <input type="file" name="courseCover" id="courseCoverSelector" class="course-image-selector" accept="image/jpeg, image/png">
+                                    <label for="courseCoverSelector" class="course-cover-label">
+                                        <span class="zn-btn btn-medium btn-success" id="course-cover-btn">Thay đổi</span>
+                                    </label>
+                                    <p class="course-image-desc">Kích thước hình đại diện là 480 x 270 px.</p>
+                                    <input type="hidden" name="courseCoverBase64" id="courseCoverBase64">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="courseBackground" class="col-sm-3 control-label">Hình nền</label>
+                                <div class="col-sm-9">
+                                    <div id="course-background-box" class="course-image-box">
+                                        <img src="http://stc.zuni.vn/resource/module/default/layout/image/no_image.jpg" class="courseCover ccAvatar img-polaroid" width="240" onerror="Zuni.Layout.fixErrorImgs(this);">
+                                    </div>
+                                    <canvas id="background-crop-canvas" style="display: none;"></canvas>
+                                    <input type="file" name="courseBackground" id="courseBackgroundSelector" class="course-image-selector" accept="image/jpeg, image/png">
+                                    <label for="courseBackgroundSelector" class="course-cover-label">
+                                        <span class="zn-btn btn-medium btn-success" id="course-background-btn">Thay đổi</span>
+                                    </label>
+                                    <p class="course-image-desc">Lưu ý: Hình nền có dung lượng không quá 1024M.</p>
+                                    <input type="hidden" name="courseBackgroundBase64" id="courseBackgroundBase64">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-columns"></i> Lĩnh Vực</div>
+                            <div class="form-group">
+                                <label for="courseIsPrivate" class="control-label col-sm-3">Phân loại khoá học <font class="required" color="red">*</font></label>
+                                <div class="col-sm-9">
+                                    <select id="courseType" name="courseType" class="form-control">
+                                        <option value="-1" selected="selected">
+                                            Luyện thi Đại học
+                                        </option>
+                                        <option value="6">
+                                            Luyện thi lớp 10
+                                        </option>
+                                        <option value="5">
+                                            Kỹ năng
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group" id="courseSubjectFormGroup" style="">
+                                <label for="courseSubject" class="col-sm-3 control-label">Môn học <font class="required" color="red">*</font></label>
+                                <div class="col-sm-5">
+                                    <select id="courseSubject" name="courseSubject" class="form-control">
+                                        <option value="10">
+                                            Toán Học
+                                        </option>
+                                        <option value="11">
+                                            Văn Học
+                                        </option>
+                                        <option value="12">
+                                            Ngoại Ngữ
+                                        </option>
+                                        <option value="13">
+                                            Địa Lý
+                                        </option>
+                                        <option value="14">
+                                            Vật lý
+                                        </option>
+                                        <option value="15">
+                                            Hóa Học
+                                        </option>
+                                        <option value="16">
+                                            Lịch Sử
+                                        </option>
+                                        <option value="17">
+                                            Sinh học
+                                        </option>
+                                        <option value="18">
+                                            Khác
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="courseFieldFormGroup" style="display:none;">
+                                <label for="courseDescription" class="control-label col-sm-3">Chọn lĩnh vực</label>
+                                <div class="col-sm-9">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="filter[]" value="english">Tiếng Anh
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="filter[]" value="knm">Kỹ năng mềm
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="filter[]" value="ktcn">Kiến thức chuyên ngành
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="filter[]" value="khac">Khác
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                $(document).on('ready', function () {
+                                    $('#courseType').on('change', function () {
+                                        if ($(this).val() == -1) {
+                                            $('#courseTypeDetailFormGroup').length && $('#courseTypeDetailFormGroup').show();
+                                            $('#courseSubjectFormGroup').show();
+                                            $('#courseFieldFormGroup').hide();
+                                        } else if ($(this).val() == 5) { // kỹ năng
+                                            $('#courseTypeDetailFormGroup').hide();
+                                            $('#courseSubjectFormGroup').hide();
+                                            $('#courseFieldFormGroup').show();
+                                        } else { // Prep 10
+                                            $('#courseTypeDetailFormGroup').length && $('#courseTypeDetailFormGroup').hide();
+                                            $('#courseSubjectFormGroup').show();
+                                            $('#courseFieldFormGroup').hide();
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-columns"></i> Chi tiết</div>
+                            <div class="form-group">
+                                <label for="courseDescription" class="control-label col-sm-3">Giới thiệu về khóa học</label>
+                                <div class="col-sm-9">
+                                    <div id="mceu_25" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_25-body" class="mce-container-body mce-stack-layout"><div id="mceu_26" class="mce-toolbar-grp mce-container mce-panel mce-first mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group"><div id="mceu_26-body" class="mce-container-body mce-stack-layout"><div id="mceu_27" class="mce-container mce-toolbar mce-first mce-stack-layout-item" role="toolbar"><div id="mceu_27-body" class="mce-container-body mce-flow-layout"><div id="mceu_28" class="mce-container mce-first mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_28-body"><div id="mceu_0" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_0" role="button" aria-label="Bold"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_1" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_1" role="button" aria-label="Italic"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div></div></div><div id="mceu_29" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_29-body"><div id="mceu_2" class="mce-widget mce-btn mce-colorbutton mce-first" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_2-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_3" class="mce-widget mce-btn mce-colorbutton mce-last" role="button" tabindex="-1" aria-haspopup="true" aria-label="Background color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-backcolor"></i><span id="mceu_3-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div></div></div><div id="mceu_30" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_30-body"><div id="mceu_4" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_4" role="button" aria-label="Align left"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_5" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_5" role="button" aria-label="Align center"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_6" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_6" role="button" aria-label="Align right"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div><div id="mceu_7" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_7" role="button" aria-label="Justify"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignjustify"></i></button></div></div></div><div id="mceu_31" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_31-body"><div id="mceu_8" class="mce-widget mce-btn mce-first mce-disabled" tabindex="-1" aria-labelledby="mceu_8" role="button" aria-label="Undo" aria-disabled="true"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-undo"></i></button></div><div id="mceu_9" class="mce-widget mce-btn mce-last mce-disabled" tabindex="-1" aria-labelledby="mceu_9" role="button" aria-label="Redo" aria-disabled="true"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-redo"></i></button></div></div></div><div id="mceu_32" class="mce-container mce-last mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_32-body"><div id="mceu_10" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_10" role="button" aria-label="Insert/edit image"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-image"></i></button></div><div id="mceu_11" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_11" role="button" aria-label="Fullscreen"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-fullscreen"></i></button></div></div></div></div></div><div id="mceu_33" class="mce-container mce-toolbar mce-last mce-stack-layout-item" role="toolbar"><div id="mceu_33-body" class="mce-container-body mce-flow-layout"><div id="mceu_34" class="mce-container mce-first mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_34-body"><div id="mceu_12" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_12" role="button" aria-label="Nhập công thức"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-fx"></i></button></div><div id="mceu_13" class="mce-widget mce-btn mce-menubtn" tabindex="-1" aria-labelledby="mceu_13" role="button" aria-label="Lượng giác" aria-haspopup="true"><button id="mceu_13-open" role="presentation" type="button" tabindex="-1"><span>sin/cos</span> <i class="mce-caret"></i></button></div><div id="mceu_14" class="mce-widget mce-btn mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_14" role="button" aria-haspopup="true"><button id="mceu_14-open" role="presentation" type="button" tabindex="-1"><span>log/lim</span> <i class="mce-caret"></i></button></div></div></div><div id="mceu_35" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_35-body"><div id="mceu_15" class="mce-widget mce-btn mce-menubtn mce-first" tabindex="-1" aria-labelledby="mceu_15" role="button" aria-label="x^a" aria-haspopup="true"><button id="mceu_15-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-exp-1"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_16" class="mce-widget mce-btn mce-menubtn" tabindex="-1" aria-labelledby="mceu_16" role="button" aria-label="Phân số" aria-haspopup="true"><button id="mceu_16-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-frac-1"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_17" class="mce-widget mce-btn mce-menubtn" tabindex="-1" aria-labelledby="mceu_17" role="button" aria-label="Phép toán" aria-haspopup="true"><button id="mceu_17-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-oper-0"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_18" class="mce-widget mce-btn mce-comp mce-menubtn" tabindex="-1" aria-labelledby="mceu_18" role="button" aria-label="Phép so sánh" aria-haspopup="true"><button id="mceu_18-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-comp-0"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_19" class="mce-widget mce-btn mce-menubtn" tabindex="-1" aria-labelledby="mceu_19" role="button" aria-label="Hàm số" aria-haspopup="true"><button id="mceu_19-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-func-0"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_20" class="mce-widget mce-btn mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_20" role="button" aria-label="Kí hiệu" aria-haspopup="true"><button id="mceu_20-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-symbol-0"></i><span></span> <i class="mce-caret"></i></button></div></div></div><div id="mceu_36" class="mce-container mce-last mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_36-body"><div id="mceu_21" class="mce-widget mce-btn mce-menubtn mce-first" tabindex="-1" aria-labelledby="mceu_21" role="button" aria-label="Tập hợp" aria-haspopup="true"><button id="mceu_21-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-set-0"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_22" class="mce-widget mce-btn mce-menubtn" tabindex="-1" aria-labelledby="mceu_22" role="button" aria-label="Ký hiệu quan hệ" aria-haspopup="true"><button id="mceu_22-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-arrow-0"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_23" class="mce-widget mce-btn mce-menubtn" tabindex="-1" aria-labelledby="mceu_23" role="button" aria-label="Góc" aria-haspopup="true"><button id="mceu_23-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-angle-0"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_24" class="mce-widget mce-btn mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_24" role="button" aria-label="Ngoặc" aria-haspopup="true"><button id="mceu_24-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bound-0"></i><span></span> <i class="mce-caret"></i></button></div></div></div></div></div></div></div><div id="mceu_37" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="courseDescription_ifr" frameborder="0" allowtransparency="true" title="Khu vực soạn thảo. Nhấn ALT-F9 để hiện menu, ALT-F10 để hiện thanh công cụ. Cần trợ giúp nhấn ALT-0" src='javascript:""' style="width: 100%; height: 100px; display: block;"></iframe></div><div id="mceu_38" class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_38-body" class="mce-container-body mce-flow-layout"><div id="mceu_39" class="mce-path mce-flow-layout-item mce-first"><div role="button" class="mce-path-item mce-last" data-index="0" tabindex="-1" id="mceu_39-0" aria-level="0">p</div></div><label id="mceu_41" class="mce-wordcount mce-widget mce-label mce-flow-layout-item">Từ: 0</label><div id="mceu_40" class="mce-flow-layout-item mce-resizehandle mce-last"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea id="courseDescription" name="courseDescription" rows="5" class="form-control" data-ze-has-guide="0" aria-hidden="true" style="display: none;"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="courseDescription" class="control-label col-sm-3">Mục tiêu khóa học</label>
+                                <div class="col-sm-9 cm-list">
+                                    <div class="cm-list-items">
+                                        <div class="cm-list-item default">
+                                            <input type="text" class="form-control" placeholder="Mục tiêu" name="courseTarget[]">
+                                            <a class="fa fa-trash-o"></a>
+                                        </div>
+                                        <div class="cm-list-item">
+                                            <input type="text" class="form-control" placeholder="Mục tiêu" name="courseTarget[]">
+                                            <a class="fa fa-trash-o"></a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="cm-add-list-item zn-btn btn-medium btn-success"><i class="fa fa-plus"></i> Thêm mục tiêu</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="courseDescription" class="control-label col-sm-3">Đối tượng học viên</label>
+                                <div class="col-sm-9 cm-list">
+                                    <div class="cm-list-items">
+                                        <div class="cm-list-item default">
+                                            <input type="text" class="form-control" placeholder="Đối tượng học viên" name="courseStudentObject[]">
+                                            <a class="fa fa-trash-o"></a>
+                                        </div>
+                                        <div class="cm-list-item">
+                                            <input type="text" class="form-control" placeholder="Đối tượng học viên" name="courseStudentObject[]">
+                                            <a class="fa fa-trash-o"></a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="cm-add-list-item zn-btn btn-medium btn-success"><i class="fa fa-plus"></i> Thêm đối tượng học viên</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="courseDescription" class="control-label col-sm-3">Khóa học bao gồm</label>
+                                <div class="col-sm-9 cm-list">
+                                    <div class="cm-list-items">
+                                        <div class="cm-list-item default">
+                                            <input type="text" class="form-control" placeholder="Số lượng chuyên đề, Số lượng bài tập, bài thi, hỗ trợ khác..." name="courseStudentRequire[]">
+                                            <a class="fa fa-trash-o"></a>
+                                        </div>
+                                        <div class="cm-list-item">
+                                            <input type="text" class="form-control" placeholder="Số lượng chuyên đề, video, bài tập, bài thi, hỗ trợ khác..." name="courseStudentRequire[]">
+                                            <a class="fa fa-trash-o"></a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="cm-add-list-item zn-btn btn-medium btn-success"><i class="fa fa-plus"></i> Thêm thành phần của khóa học</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="courseLevel" class="control-label col-sm-3">Trình độ khóa học</label>
+                                <div class="col-sm-9">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="courseLevel" value="0" checked="checked">
+                                        Tất cả trình độ
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="courseLevel" value="1">
+                                        Cơ bản
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="courseLevel" value="2">
+                                        Trung bình
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="courseLevel" value="3">
+                                        Nâng cao
+                                    </label>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                var list;
+                                $(document).on('ready', function () {
+                                    $(document)
+                                    .on('click', '.cm-list-item .fa-trash-o', function () {
+                                        var listItem = $(this).closest('.cm-list-item');
+                                        listItem.remove();
+                                    })
+                                    .on('click', 'button.cm-add-list-item', function () {
+                                        list = $(this).closest('.cm-list');
+
+                                        var htmlEl = list.find('.default').clone();
+                                        htmlEl.removeClass('default');
+                                        html = htmlEl.wrap('<p>').parent().html();
+                                        list.find('.cm-list-items').append(html);
+
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-gears"></i> Cài đặt</div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label for="courseIsPrivate" class="control-label help-link-container" style="float:right">
+                                        <span>Riêng tư</span>
+                                        <span class="help-link" data-toggle="tooltip" title="Cho phép tham gia lớp học tự do hay không.">[<b>?</b>]</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="switch">
+                                        <input id="courseIsPrivate" class="cmn-toggle cmn-toggle-round" type="checkbox" name="courseIsPrivate">
+                                        <label for="courseIsPrivate">
+                                            <b>Bật</b>
+                                            <span>Tắt</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="coursePrice" class="control-label col-sm-3">Học phí</label>
+                                <div class="col-sm-9">
+                                    <div class="switch">
+                                        <input id="coursePrice" class="cmn-toggle cmn-toggle-round big" type="checkbox" name="coursePrice">
+                                        <label for="coursePrice">
+                                            <b>Có phí</b>
+                                            <span>Miễn phí</span>
+                                        </label>
+                                    </div>
+                                    <div class="course-price-fade-el">
+                                        <input id="coursePriceDetail" type="text" class="coursePriceDetail form-control" placeholder="Học phí áp dụng" name="coursePriceDetail" value="">
+
+                                        <label for="coursePriceDetail" class="control-label coursePriceDetailLabel">VND</label> (học phí thực tế học sinh phải trả)
+                                    </div>
+                                    <div class="course-price-fade-el">
+                                        <input id="coursePriceDetail" type="text" class="coursePriceDetail form-control" placeholder="Học phí gốc (nếu có)" name="originalPrice" value="">
+
+                                        <label for="coursePriceDetail" class="control-label coursePriceDetailLabel">VND</label> (học phí trước khi giảm, áp dụng cho chương trình khuyến mại)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                var ZUNI_COURSE_INFO = {
+                                    courseId: 2431,
+                                    subjectId: 0
+                                };
+                                $(document).on('ready', function () {
+                                    $('#coursePrice').on('change', function () {
+                                        if ($(this).is(':checked')) {
+                                            $('.course-price-fade-el').fadeIn(function () {
+                                                $(this).find('input').focus();
+                                            });
+                                        } else {
+                                            $('.course-price-fade-el').fadeOut();
+                                        }
+                                    });
+                                    if ($('#coursePrice').is(':checked')) {
+                                        $('.course-price-fade-el').show();
+                                    }
+                                    // Set Price is number only
+                                    var numberPrice = function () { $('#coursePriceDetail').val($('#coursePriceDetail').val().replace(/[^0-9]/g, '')); }
+                                    numberPrice();
+                                    $('#coursePriceDetail').focusout(function () { numberPrice(); });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row cm-video-block">
+                        <div class="col-md-12">
+                            <div class="cm-bt"></div>
+                            <div class="cm-h2"><i class="fa fa-film"></i> Videos</div>
+
+                            <div class="cm-video">
+                                <div class="text help-link-container">
+                                    <span>Video giới thiệu</span>
+                                    <span class="help-link" data-toggle="tooltip" title="Video giới thiệu khóa học tới học viên.">[<b>?</b>]</span>
+                                </div>
+                                <div class="video-box zn-video-box">
+                                    <span class="icon">
+                                        <i class="fa fa-film"></i>
+                                    </span>
+                                    <div class="edit-btn uploadVideo" data-type="video_intro" data-toggle="modal" data-target="#edit-cm-video">
+                                        <i class="fa fa-pencil"></i> Thay đổi
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="edit-cm-video" tabindex="-1" role="dialog" aria-labelledby="edit-cm-video-label" aria-hidden="true">
+                                <div class="modal-dialog" style="">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Đóng</span></button>
+                                            <h4 class="modal-title" id="edit-cm-video-label">Thay đổi video</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- <p>Định dạng: mp4, dung lượng tối đa: 200MB.
+                                            <br />Hãy chắc chắn về nội dung và bản quyền liên quan trong video được đăng tải.</p> -->
+                                            <input type="hidden" id="serial_id" name="serial_id" value="8153">
+                                            <input type="hidden" id="video_intro" name="video_intro" value="">
+                                            <input type="hidden" id="video_demo" name="video_demo" value="">
+                                            <iframe id="zingtvUpload" src="http://cp.mp3.zing.vn/cp-upload?key=32612150f29537198db40f41632a4ad2&amp;show_name=false&amp;show_agree=true&amp;show_thumb=true&amp;series_id=8153" frameborder="0" scrolling="no" style="width: 100%; border: 0px; overflow: hidden;"></iframe>
+
+                                            <script>
+                                                $(document).on('ready', function () {
+                                                    var videoType = '';
+                                                    $('.cm-video .uploadVideo').click(function () {
+                                                        videoType = $(this).data('type');
+                                                    });
+                                                    var setMediaId = function (videoType, mediaId) {
+                                                        $('#' + videoType).val(mediaId);
+                                                    }
+                                                    window.addEventListener("message", receiveMessage, false);
+                                                    function receiveMessage(event) {
+                                                        if (event.origin !== "http://cp.mp3.zing.vn" || event.data == undefined) {
+                                                            return false;
+                                                        }
+                                                        var data = jQuery.parseJSON(event.data);
+                                                        setMediaId(videoType, data.media_id);
+                                                        $('#edit-cm-video').modal('hide');
+                                                        $('#newCourseSubmit').click();
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="zn-btn" data-dismiss="modal">Đóng</button>
+                                            <!-- <button type="button" class="zn-btn btn-success btn-save">Lưu</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="cm-preview-video" tabindex="-1" role="dialog" aria-labelledby="cm-preview-video-label" aria-hidden="true">
+                                <div class="modal-dialog" style="width: 800px!important;">
+                                    <iframe ng-src="" frameborder="0" width="800px" height="470px"></iframe>
+                                </div>
+                            </div>
+                            <script>
+                                $(document).on('ready', function () {
+                                    $(document).on('click', '.cm-preview-video-btn', function () {
+                                        if (typeof $(this).data('id') !== 'undefined' && $(this).data('id') != '') {
+                                            var url = 'http://tv.zing.vn/embed/video/' + $(this).data('id');
+                                            $('#cm-preview-video iframe').attr('src', url);
+                                            $('#cm-preview-video').modal('show');
+                                            $('#cm-preview-video').on('hidden.bs.modal', function () {
+                                                $('#cm-preview-video iframe').attr('src', null);
+                                            });
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cm-button-footer zn3-button-group">
+                                <button type="submit" class="zn-btn btn-success btn-save zn3-submit zn-save-settings" id="newCourseSubmit">
+                                    Lưu
+                                </button>
+                                <button type="button" class="zn-btn">Hủy</button>
+                                <div class="spinner" style="display: none;">
+                                    <div class="rect1"></div>
+                                    <div class="rect2"></div>
+                                    <div class="rect3"></div>
+                                    <div class="rect4"></div>
+                                    <div class="rect5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

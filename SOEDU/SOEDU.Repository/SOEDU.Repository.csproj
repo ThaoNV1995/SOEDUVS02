@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1F861BA-E0E5-4990-8798-A97C029BB71A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOEDU.Repository</RootNamespace>
+    <AssemblyName>SOEDU.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SOEDU.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SOEDU.Common\bin\Debug\SOEDU.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SOEDU.Entities">
+      <HintPath>..\SOEDU.Entities\bin\Debug\SOEDU.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assess\AssessRepository.cs" />
+    <Compile Include="Assess\IAssessRepository.cs" />
+    <Compile Include="Attach\AttachRepository.cs" />
+    <Compile Include="Attach\IAttachRepository.cs" />
+    <Compile Include="CourseCategory\CourseCategory.cs" />
+    <Compile Include="CourseCategory\ICourseCategory.cs" />
+    <Compile Include="Course\CourseRepository.cs" />
+    <Compile Include="Course\ICourseRepository.cs" />
+    <Compile Include="Lesson\ILessonRepository.cs" />
+    <Compile Include="Lesson\LessonRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Section\ISectionRepository.cs" />
+    <Compile Include="Section\SectionRepository.cs" />
+    <Compile Include="StudentCourse\IStudentCourseRepository.cs" />
+    <Compile Include="StudentCourse\StudentCourseRepository.cs" />
+    <Compile Include="StudentTestSection\IStudentTestSectionRepository.cs" />
+    <Compile Include="StudentTestSection\StudentTestSectionRepository.cs" />
+    <Compile Include="StudentTest\IStudentTestRepository.cs" />
+    <Compile Include="StudentTest\StudentTestRepository.cs" />
+    <Compile Include="Target\ITargetRepository.cs" />
+    <Compile Include="Target\TargetRepository.cs" />
+    <Compile Include="TeacherCourse\ITeacherCourseRepository.cs" />
+    <Compile Include="TeacherCourse\TeacherCourseRepository.cs" />
+    <Compile Include="Teacher\ITeacherRepository.cs" />
+    <Compile Include="Teacher\TeacherRepository.cs" />
+    <Compile Include="TestLessonAnswer\ITestLessonAnswerRepository.cs" />
+    <Compile Include="TestLessonAnswer\TestLessonAnswerRepository.cs" />
+    <Compile Include="TestLessonQuestion\ITestLessonQuestionRepository.cs" />
+    <Compile Include="TestLessonQuestion\TestLessonQuestionRepository.cs" />
+    <Compile Include="TestLesson\ITestLessonRepository.cs" />
+    <Compile Include="TestLesson\TestLessonRepository.cs" />
+    <Compile Include="TestSectionAnswer\ITestSectionAnswerRepository.cs" />
+    <Compile Include="TestSectionAnswer\TestSectionAnswerRepository.cs" />
+    <Compile Include="TestSectionQuestion\ITestSectionQuestionRepository.cs" />
+    <Compile Include="TestSectionQuestion\TestSectionQuestionRepository.cs" />
+    <Compile Include="TestSection\ITestSectionRepository.cs" />
+    <Compile Include="TestSection\TestSectionRepository.cs" />
+    <Compile Include="Test\ITestRepository.cs" />
+    <Compile Include="Test\TestRepository.cs" />
+    <Compile Include="User\IUserRepository.cs" />
+    <Compile Include="User\UserRepository.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
